@@ -1,0 +1,24 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+div{
+  padding:100px 100px ;
+  background-color: pink;
+  text-align: center;
+  border-radius: 2.5em;
+  font-size: 1.5em;
+  color: white;
+  display: inline-block; /* 使div的宽度适应内容 */
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid palevioletred;
+  box-shadow: 
+  2px 2px 4px rgba(0, 0, 0, 0.2), /* 标准外盒阴影 */
+  inset 4px 4px 8px rgba(255, 255, 255, 0.5), /* 左上角的白色内盒阴影 */
+  inset -4px -4px 8px rgba(0, 0, 0, 0.5); /* 右下角的黑色内盒阴影 */
+    
+
+}
+
+
