@@ -1,0 +1,52 @@
+/* web-font-start.css */
+@font-face {
+  font-family: 'AlexBrush';
+  src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+       url('fonts/alexbrush-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuicksandBold';
+  src: url('fonts/quicksand-bold-webfont.woff2') format('woff2'),
+       url('fonts/quicksand-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'AlexBrush', sans-serif; /* 使用自定义字体，如果不可用作通用字体 */
+}
+
+h1 {
+  font-family: 'QuicksandBold', sans-serif; /* 使用自定义字体，如果不可用作通用字体 */
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
