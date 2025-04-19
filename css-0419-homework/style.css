@@ -1,0 +1,129 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body {
+  font-family: serif;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  line-height: 5rem;
+  letter-spacing: 0em;
+  word-spacing: 0.1rem;
+}
+header{
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+  letter-spacing: 0em;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+section h2+p{
+  text-indent: 20px;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+a{
+  line-height: 5rem;
+}
+a:link{
+  color:#a66
+}
+a:visited{
+  color: pink;
+}
+a:focus{
+  color:aqua;
+  text-decoration: none;
+  outline: none;
+}
+a:hover{
+  color: #a610a6;
+  text-decoration: none;
+}
+a:active{
+  background-color: black;
+  color:white;
+}
+
+p {
+  line-height: 1.5;
+  margin: 1em 0;
+}
+ul li {
+  line-height: 1.5; 
+}
+ul {
+  margin: 1em 0; /* 与段落相同的上下间距 */
+  padding-left: 0; /* 移除默认的缩进 */
+}
+
+section ul li {
+  padding-left: 2rem; /* 为自定义符号留出空间 */
+  background-image: url("external-link-52.png"); /* 自定义 bullet 图像 */
+  background-position: 0 0.5em; /* 图像位置：水平起始，垂直居中 */
+  background-repeat: no-repeat; /* 图像不重复 */
+}
+
+aside ul li {
+  padding-left: 2rem; /* 为自定义符号留出空间 */
+  background-image: url("external-link-52.png"); /* 自定义 bullet 图像 */
+  background-position: 0 0.5em; /* 图像位置：水平起始，垂直居中 */
+  background-repeat: no-repeat; /* 图像不重复 */
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  width: 20rem;
+  height: 8rem;
+  border: 1px solid #a66;
+  margin: 2rem 0;
+  text-align: center;
+  line-height: 8rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+ 
+nav ul li a:hover {
+  background-color: antiquewhite;
+}
+
+
+                      
