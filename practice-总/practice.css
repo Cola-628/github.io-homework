@@ -1,0 +1,124 @@
+   *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cl{
+            clear: both;
+        }
+        body{
+            font-size: 14px;
+            font-family: "Microsoft YaHei","SimSun";
+            height: 8888px;
+        }
+        .header{
+            height: 58px;
+            background-color: #191D3A;
+        }
+        .inner_c{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .header .logo{
+            float: left;
+            margin-right: 40px;
+        }
+        .header .nav{
+            float: left;
+        }
+        .header .nav ul{
+            list-style: none; 
+        }
+        .header .nav ul li{
+            float: left;
+            width: 100px;
+            line-height: 58px;
+            border-left: 1px solid #252947; 
+        }
+        .header .nav ul li.last{
+            border-right: 1px solid #252947;
+        }
+        .header .nav ul li a{
+            display: block; 
+            height: 58px;
+            text-decoration: none;
+            color:#818496;
+            text-align: center;  
+        }
+    
+        .header .nav ul li a:hover{
+            color: white;
+            background: #252947;
+        }
+
+        .header .jrwm_box{
+            float: left;
+            height: 58px;
+            width: 100px;
+            padding-left: 48px;
+            padding-top: 12px;
+
+        }
+        .header .jrwm_box .jrwm{
+            height: 34px;
+            background-image: url(images/jrwm.png);
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .header .jrwm_box .jrwm a{
+            display: block; 
+            line-height: 34px;
+            text-decoration: none;
+            color: white;
+        }
+        .banner{
+            height:465px;
+            background-image:url(images/banner.jpg);
+            background-repeat:no-repeat;
+            background-position: center top;
+        }
+        .content{
+            padding-top: 50px;
+        }
+        .content .product{
+            height: 229px;
+            border-bottom: 1px solid #DBE1E7;
+        }
+        .content .product ul{
+            list-style: none;
+        }
+        .content .product ul li{
+            float:left;
+            width: 218px;
+            margin-right: 43px;
+        }
+         .content .product ul li.last{
+            margin-right: 0;
+            width: 217px;
+        }
+        .content .product ul li img{
+            width: 218px;
+            height: 130px;
+        }
+          .content .product ul li.last img{
+            width: 217px;
+        }
+
+        .content .product ul li h3{
+            text-align: center;
+             line-height: 38px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .content .product ul li p.djbf{
+            text-align: center;
+            height: 15px;
+        }
+        .content .product ul li p.djbf a{
+            background: url(images/sanjiaoxing.png) no-repeat right 5px;
+            font-size: 12px;
+            color:#38B774;
+            text-decoration: none;
+            padding-right: 12px;
+
+        }
