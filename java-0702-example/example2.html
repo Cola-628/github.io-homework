@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+<ul>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+</ul>
+<script>
+ var inPutall=document.getElementsByTagName("input");
+ for(var i=0;i<inPutall.length;i++){
+    inPutall[i].onfocus=function(){
+        this.style.border="2px solid red";
+        this.style.background="yellow";
+    }
+    inPutall[i].onblur=function(){
+          this.style.border="";
+        this.style.background="";
+    }
+    }
+ 
+</script>
+</body>
+</html>

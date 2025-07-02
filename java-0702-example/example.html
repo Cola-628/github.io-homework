@@ -1,0 +1,19 @@
+<body>
+<div style="width: 100px;height: 100px;background-color: pink;"></div>
+<script>
+var div=document.getElementsByTagName("div")[0];
+div.onmouseover=function(){
+    div.style.width="200px";
+    div.style.height="200px";
+    div.style.backgroundColor="purple";
+    div.style.opacity="0.5";
+}
+ div.onmouseout = function() {
+        div.style.width = "150px";
+        div.style.height = "150px";
+        div.style.backgroundColor = "orange";
+        div.style.opacity = "0.5";
+    };
+</script>
+
+</body>
