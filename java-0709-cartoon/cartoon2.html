@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box1 {
+            margin: 0;
+            padding: 5px;
+            height: 300px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 195px;
+            top: 40px;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 0;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <button>运动到 left = 100px</button>
+    <button>运动到 left = 300px</button>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+
+<script>
+   var btn=document.getElementsByTagName("button");
+   var box2=document.getElementsByClassName("box2")[0];
+   var box3=document.getElementsByClassName("box3")[0];
+   btn[0].onclick=function(){
+    animate(box2,100);
+    animate(box3,100);
+   }
+  btn[1].onclick=function(){
+    animate(box2,300);
+    animate(box3,300);
+   }
+
+      //【重要】方法的封装：每间隔30ms，将盒子向右移动10px
+    function animate(ele, target) {
+        //要用定时器，先清除定时器
+        //一个盒子只能有一个定时器，这样的话，不会和其他盒子出现定时器冲突
+        //我们可以把定时器本身，当成为盒子的一个属性
+        clearInterval(ele.timer);
+        //我们要求盒子既能向前又能向后，那么我们的步长就得有正有负
+        //目标值如果大于当前值取正，目标值如果小于当前值取负
+        var speed = target > ele.offsetLeft ? 1 : -1;  //speed指的是步长
+        ele.timer = setInterval(function () {
+            //在执行之前就获取当前值和目标值之差
+            var val = target - ele.offsetLeft;
+
+            //移动的过程中，如果目标值和当前值之差如果小于步长，那么就不能在前进了
+            //因为步长有正有负，所有转换成绝对值来比较
+            if (Math.abs(val) < Math.abs(speed)) {  //如果val小于步长，则直接到达目的地；否则，每次移动一个步长
+                ele.style.left = target + "px";
+                clearInterval(ele.timer);
+            } else {
+                ele.style.left = ele.offsetLeft + speed + "px";
+            }
+        }, 30)
+    }
+
+</script>
+</body>
+</html>
